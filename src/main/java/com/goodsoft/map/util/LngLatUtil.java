@@ -37,8 +37,8 @@ public class LngLatUtil {
             LatLongtude data = new LatLongtude();
             double lng = obj.getJSONObject("result").getJSONObject("location").getDouble("lng");
             double lat = obj.getJSONObject("result").getJSONObject("location").getDouble("lat");
+            data.setLng(lng);
             data.setLat(lat);
-            data.setLgt(lng);
             return new Result(0, data);
         } else {
             return new Status(404, "未找到匹配的经纬度，请输入详细的地址!");

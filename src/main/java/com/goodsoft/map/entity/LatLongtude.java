@@ -6,8 +6,16 @@ package com.goodsoft.map.entity;
  * version v1.0
  */
 public class LatLongtude implements java.io.Serializable {
-    private double lat;//纬度
-    private double lgt;//经度
+    private double lng;//纬度
+    private double lat;//经度
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
 
     public double getLat() {
         return lat;
@@ -15,13 +23,5 @@ public class LatLongtude implements java.io.Serializable {
 
     public void setLat(double lat) {
         this.lat = lat;
-    }
-
-    public double getLgt() {
-        return lgt;
-    }
-
-    public void setLgt(double lgt) {
-        this.lgt = lgt;
     }
 }
